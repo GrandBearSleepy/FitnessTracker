@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout',
         useUnifiedTopology: true,
         useCreateIndex: true,
         useFindAndModify: false
-    })
+    });
 
 require('./routes/html-routes.js')(app);
 require('./routes/workout-api.js')(app);
